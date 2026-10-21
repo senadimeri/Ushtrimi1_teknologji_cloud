@@ -20,7 +20,24 @@
     <button type="submit" onclick="pjestimi()">Pjestimi </button>
     <p id="result3"></p> 
 
+    <br>
+    <hr>
+
+    <h1>Rritje/Zbritje</h1>
+    <p id="numri">0</p>
+    <button type="submit" onclick="rritje()">Rritje +</button>
+      <button type="submit" onclick="zbritje()">Zbritje -</button>
+    
+    
+
     <script>
+
+      var n=0;
+      function rritje()
+      {
+        n=n+1;
+        document.getElementById('numru').innerHTML=n;
+      }
       function sum()
       {
         var a=Number(document.getElementById('nr1').value);
