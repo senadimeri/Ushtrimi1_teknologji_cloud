@@ -34,21 +34,25 @@
            var a=Number(document.getElementById('nr1').value);
         var b=Number(document.getElementById('nr2').value);
         var c=a-b;
-        document.getElementById('result1').innerHTML=f;
+        document.getElementById('result1').innerHTML=c;
       }
        function shumezimi()
       {
            var a=Number(document.getElementById('nr1').value);
         var b=Number(document.getElementById('nr2').value);
         var c=a*b;
-        document.getElementById('result2').innerHTML=f;
+        document.getElementById('result2').innerHTML=c;
       }
       function pjestimi()
       {
+      
          var a=Number(document.getElementById('nr1').value);
         var b=Number(document.getElementById('nr2').value);
+        if(b==0 ){
+          document.getElementById('result3').innerHTML='Nuk pjestohet me 0';
+        }
         var c=a/b;
-        document.getElementById('result3').innerHTML=f;
+        document.getElementById('result3').innerHTML=c;
       }
       
       
