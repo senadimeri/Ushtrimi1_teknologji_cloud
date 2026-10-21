@@ -12,7 +12,8 @@
     <input type="number" id="nr2">
 <br>
     <button type="submit" onclick="sum()">Shuma </button>
-    <p id="result"></p>      
+    <p id="result"></p> 
+
 
     <script>
       function sum()
@@ -21,7 +22,14 @@
         var b=Number(document.getElementById('nr2').value);
         var c=a+b;
         document.getElementById('result').innerHTML=c;
+
+
+           var d=Number(document.getElementById('nr1').value);
+        var e=Number(document.getElementById('nr2').value);
+        var f=a+b;
+        document.getElementById('result').innerHTML=f;
       }
     </script>
+
   </body>
   </html>
