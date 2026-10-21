@@ -14,8 +14,10 @@
     <button type="submit" onclick="sum()">Shuma </button>
     <p id="result"></p> 
 
-    <button type="submit" onclick="zbritje()">Heresi </button>
+    <button type="submit" onclick="zbritja()">Heresi </button>
     <p id="result1"></p> 
+    <button type="submit" onclick="shumezimi()">Shumezimi </button>
+    <p id="result2"></p> 
 
     <script>
       function sum()
@@ -26,13 +28,22 @@
         document.getElementById('result').innerHTML=c;
 
       }
-      function zbritje()
+      function zbritja()
       {
            var d=Number(document.getElementById('nr1').value);
         var e=Number(document.getElementById('nr2').value);
         var f=a-b;
         document.getElementById('result1').innerHTML=f;
       }
+       function shumezimi()
+      {
+           var d=Number(document.getElementById('nr1').value);
+        var e=Number(document.getElementById('nr2').value);
+        var f=a*b;
+        document.getElementById('result2').innerHTML=f;
+      }
+      
+      
     </script>
 
   </body>
